@@ -8,6 +8,9 @@ RUN pip install gunicorn
 # Install falcon
 RUN pip install falcon
 
+# Install requests
+RUN pip install requests
+
 
 COPY . /app
 WORKDIR /app
