@@ -3,13 +3,12 @@ import time
 
 
 def get_as_cp(now):
-    now = now.encode('utf-8')
     zz ={}
     # now = round(time.time())
     # print now
     e = hex(int(now)).upper()[2:]
     # print e
-    i = hashlib.md5(str(int(now))).hexdigest().upper()
+    i = hashlib.md5(str(int(now)).encode('utf-8')).hexdigest().upper()
     if len(e) != 8:
         zz = {'as': "479BB4B7254C150",
             'cp': "7E0AC8874BB0985"}
