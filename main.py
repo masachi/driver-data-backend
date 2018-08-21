@@ -9,4 +9,4 @@ driver_data = falcon.API(
     ]
 )
 
-driver_data.add_route('/test', ToutiaoService())
+driver_data.add_route('/toutiao/latest', ToutiaoService())
