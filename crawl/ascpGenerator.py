@@ -3,6 +3,7 @@ import time
 
 
 def get_as_cp(now):
+    now = now.encode('utf-8')
     zz ={}
     # now = round(time.time())
     # print now
